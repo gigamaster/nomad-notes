@@ -15,7 +15,7 @@
 
 --- 
   
-[![Codemo Digital Nomad Notes](nomad-notes-screen.jpg)](https://gigamaster.github.io/nomad-notes/)
+[![Codemo Digital Nomad Notes](codemo-nomad-notes-screen.webp)](https://gigamaster.github.io/nomad-notes/)
   
 --- 
 
@@ -38,6 +38,12 @@
   - Sort by priority 
   - Sort by date
 - Search Notes
+
+## ToDo
+
+- Export file json
+- Import local file json
+
 
 ### Dependencies
 
