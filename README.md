@@ -11,29 +11,31 @@
 </h1>
 
 
-<p align="center">Digital Nomad Notes to easily create and organize your locally stored notes.</p>
+<p align="center"><br />Digital Nomad Notes to easily create and organize your locally stored notes.<br /><br /></p>
 
---- 
+
   
 [![Codemo Digital Nomad Notes](codemo-nomad-notes-screen.webp)](https://gigamaster.github.io/nomad-notes/)
   
---- 
+ 
 
 
 ## Features
 
 - Notes Management
-  - Crud
-  - Text and image
+  - localStorage
   - Color note
+  - Crud
+  - Quill WYSIWYG editor
   - Tags
+  - Text and image
 - Archive and Trash
   - Archive notes
   - Restore notes
   - Permanently delete
 - Labels Management
-  - Multiple tags
   - Create new tags
+  - Note with multiple tags
 - Filter
   - Sort by priority 
   - Sort by date
@@ -98,7 +100,7 @@ npm build
 
 ### Browsers list
 
-(Browsers list)[https://github.com/browserslist/browserslist]
+[Browsers list](https://github.com/browserslist/browserslist)
 
 🦔 Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env. Get a list : 
 
