@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nomad-notes/static/css/main.7fef68af.css",
+    "main.js": "/nomad-notes/static/js/main.d3da6c6d.js",
+    "static/media/nomadenotes.svg": "/nomad-notes/static/media/nomadenotes.445f17559b46e2b1a2bb45aaa6049fe5.svg",
+    "static/media/error404.svg": "/nomad-notes/static/media/error404.63666b3c3f3dce1721b4e1bc5f4d807e.svg",
+    "index.html": "/nomad-notes/index.html",
+    "main.7fef68af.css.map": "/nomad-notes/static/css/main.7fef68af.css.map",
+    "main.d3da6c6d.js.map": "/nomad-notes/static/js/main.d3da6c6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fef68af.css",
+    "static/js/main.d3da6c6d.js"
+  ]
+}
