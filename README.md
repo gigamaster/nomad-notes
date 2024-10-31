@@ -120,7 +120,7 @@ Inside the **nomad-notes** project, you can run some built-in commands.
 npm install
 ```
 
-## `npm start`
+### `npm start`
 
 Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
 The page will automatically reload if you make changes to the code.<br>
@@ -130,14 +130,14 @@ You will see the build errors and lint warnings in the console.
 npm start
 ```
 
-## `npm test`
+### `npm test`
 
 Runs the test watcher in an interactive mode.<br>
 By default, runs tests related to files changed since the last commit.
 
 [Read more about testing.](https://facebook.github.io/create-react-app/docs/running-tests)
 
-## `npm run build`
+### `npm run build`
 
 It will create a directory called `build` inside the current folder with a production build of your app.  
 Inside the build/static directory will be your JavaScript and CSS files.  
@@ -164,6 +164,11 @@ Run build ready to deploy.
 
 Deploy the build to GitHub Pages.
 
+For a project page, ensure that GitHub Pages option in your GitHub project settings is set to **use the gh-pages branch** !
+Optionally, you can configure a custom domain with GitHub Pages by adding a `CNAME` file to the public/ folder.  
+The `CNAME` file should look like this:
+
+`mywebsite.com`
 
 ## Deploy to GitHub Pages
 
