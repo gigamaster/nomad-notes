@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #2943a3;
+  --color-link: #888;
+  --color-hover: #fff;
+}
+
+html {
+  background-image: radial-gradient(#888 3%, #131517 3%);
+  background-position: 0 0;
+  background-size: 30px 45px;
+  scrollbar-color: #2a2f32 #212527;
+  scrollbar-width: thin;
+}
+html:before {
+  content: "";
+  background: radial-gradient(transparent, black), transparent;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+body {
+  accent-color: var(--primary-color);
+  color: #abc;
+  font-family: system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+input {
+  font-family: system-ui, sans-serif;
+}
+input[type="radio"] {
+  /* The native appearance is hidden */
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* For a circular appearance we need a border-radius. */
+  border-radius: 50%;
+
+  /* The background will be the radio dot's color. */
+  background: rgba(250, 250, 250, 0.5);
+
+  /* The border will be the spacing between the dot and the outer circle */
+  border: 3px solid rgba(250, 250, 250, 0.5);
+
+  /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
+  box-shadow: 0 0 0 1px var(--primary-color);
+  /* Not removed via appearance */
+  margin: 0;
+
+  /* background-color: rgba(97, 154, 234, 0.16); */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+}
+input[type="radio"]:checked {
+  background-color: var(--primary-color);
+  /* border: 3px solid var(--primary-color); */
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
