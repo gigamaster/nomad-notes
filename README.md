@@ -162,9 +162,9 @@ Run build ready to deploy.
 
 ### `npm run predeploy`
 
-Deploy the build to GitHub Pages.
+1. Deploy the build to GitHub Pages.
+2. In your GitHub project settings, set **Pages** to use the branch **gh-pages** !
 
-For a project page, ensure that GitHub Pages option in your GitHub project settings is set to **use the gh-pages branch** !
 Optionally, you can configure a custom domain with GitHub Pages by adding a `CNAME` file to the public/ folder.  
 The `CNAME` file should look like this:
 
