@@ -37,70 +37,72 @@ React is completely contrary to existing web technologies, so more and more libr
 - Feb 2024. As of December 2023, more than 262,000 employees at tech companies worldwide had been laid off during the year across more than 1,180 firms.
 - Sept 2024. Technology companies worldwide saw a significant reduction in their workforce in the first quarter of 2024, with over 57 thousand employees being laid off.
 
+## Pre-requisites
+
+If you're already familiar with JavaScript, React and React Native, then you'll be able to get moving quickly! If not, it is highly recommend to gain some basic knowledge first e.g. [Learn React](https://react.dev/learn) then come back here when you're done.
+
 ## Features
 
-- Notes Management
-  - localStorage
-  - Color note
-  - Crud
-  - Quill WYSIWYG editor
-  - Tags
-  - Text and image
-- Archive and Trash
-  - Archive notes
-  - Restore notes
-  - Permanently delete
-- Labels Management
-  - Create new tags
-  - Note with multiple tags
-- Filter
-  - Sort by priority
-  - Sort by date
-- Search Notes
+<table>
+  <tr>
+    <th width="274px">Notes Management</th>
+    <th width="274px">Archive and trash</th>
+    <th width="274px">Labels Management</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      localStorage<br>
+      Color note<br>
+      Crud<br>
+      Quill WYSIWYG editor<br>
+      Tags<br>
+      Text and image
+    </td>
+    <td valign="top">
+      Archive notes<br>
+      Restore notes<br>
+      Permanently delete
+    </td>
+    <td valign="top">
+      Create new tags<br>
+      Note with multiple tags
+    </td>
+  </tr>
+    <tr>
+    <th>Filter</th>
+    <th>Localstorage</th>
+    <th>Search</th>
+  </tr>
+  <tr>
+    <td>
+      Sort by priority<br>
+      Sort by date
+    </td>
+    <td>
+      Todo - export json<br>
+      Todo - import json
+    </td>
+    <td>
+      Search Notes by Title<br>
+      Todo - Search Note content
+    </td>
+  </tr>
+</table>
 
-## ToDo
+## 🛠️ ToDo
 
+- refactor code to [react-router-dom v6](https://reactrouter.com/en/main/start/overview)
 - Export file json
 - Import local file json
 - localStorage alternatives  
 to enhance security and efficient data storage
 
-## Deploy to GitHub Pages
+## Run it locally
 
-⚠️ 🚧 **React router deployment to GitHub Pages** 🚧 ⚠️ 
+Recommend version Node v18.18.0 (LTS)  
+You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
 
-Among other issues and disadvantages of React, GitHub Pages doesn't natively support Single Page Applications, often called SPAs. A page reload for a url like example.com/foo, where /foo is a frontend route, the GitHub Pages server returns 404 because it expects these routes as individual static files.
-
-**The step below is important!**  
-If you skip it, your app will not deploy correctly.
-
-1 - Open the file `package.json` and modify the homepage field for your project:
-
-`"homepage": "https://myusername.github.io/my-app"`
-
-or for a GitHub user page:
-
-`"homepage": "https://myusername.github.io"`
-
-or for a custom domain page:
-
-`"homepage": "https://mywebsite.com"`
-
-The React App uses the homepage field to determine the root URL in the built HTML file.  
-
-2 - Open `/src/App.js` and modify the router basename to match your project:
-
-`<Router basename="/nomad-notes">`
-
-3 - Open `/public/404.html` and modify the path segments to keep:
-
-`var pathSegmentsToKeep = 1;`
-
-For a Project Pages site, and NOT using a custom domain.  
-This will only replace the route part of the path.  
-Otherwise, leave pathSegmentsToKeep = 0.  
-
-## Dependencies
+### Dependencies
 
 - React Js
 - Redux Toolkit
@@ -110,16 +112,13 @@ Otherwise, leave pathSegmentsToKeep = 0.
 - React-toastify
 - Styled Components
 
-## `npm install`
+Inside the **nomad-notes** project, you can run some built-in commands.
 
-Recommend version Node v18.18.0 (LTS)  
-You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
+### `npm install`
 
 ```sh
 npm install
 ```
-
-Inside the **nomad-notes** project, you can run some built-in commands.
 
 ## `npm start`
 
@@ -159,17 +158,59 @@ npm run format
 
 ### `npm run predeploy`
 
+Run build ready to deploy.
+
 ### `npm run predeploy`
+
+Deploy the build to GitHub Pages.
+
+
+## Deploy to GitHub Pages
+
+⚠️ 🚧 **React router deployment to GitHub Pages** 🚧 ⚠️ 
+
+Among other issues and drawbacks of React Single Page Applications, often referred to as SPAs, is the fact that they are not natively supported by GitHub Pages.
+A page reload for a url like example.com/foo, where /foo is a frontend route, the GitHub Pages server returns 404 because it expects these routes as individual static files.
+
+**The step below is important!**  
+If you skip it, your app will not deploy correctly.
+
+1 - Open the file `package.json` and modify the homepage field for your project:
+
+`"homepage": "https://myusername.github.io/my-app"`
+
+or for a GitHub user page:
+
+`"homepage": "https://myusername.github.io"`
+
+or for a custom domain page:
+
+`"homepage": "https://mywebsite.com"`
+
+The React App uses the homepage field to determine the root URL in the built HTML file.  
+
+2 - Open `/src/App.js` and modify the router basename to match your project:
+
+`<Router basename="/nomad-notes">`
+
+3 - Open `/public/404.html` and modify the path segments to keep:
+
+`var pathSegmentsToKeep = 1;`
+
+For a Project Pages site, and NOT using a custom domain.  
+This will only replace the route part of the path.  
+Otherwise, leave pathSegmentsToKeep = 0.  
 
 ## Browsers list
 
-[Browsers list](https://github.com/browserslist/browserslist)
-
-🦔 Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env. Get a list :
+Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env. Get a list :
 
 ```sh
 npx browserslist`
 ```
+
+[Learn more about Browsers list](https://github.com/browserslist/browserslist)
+
 
 ## License
 
